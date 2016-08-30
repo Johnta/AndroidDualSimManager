@@ -16,6 +16,7 @@ public class SimManagerFectory {
                 DualSimManager = new SamSungSimManager();
                 break;
             case HUAWEI:
+            case HUAWEIP7:
                 DualSimManager = new HuaweiSimManager();
             default:
                 break;
@@ -28,7 +29,8 @@ public class SimManagerFectory {
         DEFAULT(""),
         HUAWEIMATE8("HUAWEI NXT-DL00"),
         HUAWEI("HUAWEI"),
-        SAMSUNGSM("SM-G5308W");
+        SAMSUNGSM("SM-G5308W"),
+        HUAWEIP7("HUAWEI P7-L09");
 
         private final String value;
 
